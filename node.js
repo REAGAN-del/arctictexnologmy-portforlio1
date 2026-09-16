@@ -11,12 +11,12 @@
 		if (!messageElement) {
 			messageElement = document.createElement('p');
 			messageElement.dataset.formMessage = 'true';
-			messageElement.className = 'mt-4 text-center font-semibold';
+			messageElement.className = 'form-message';
 			button.insertAdjacentElement('afterend', messageElement);
 		}
 		messageElement.textContent = message;
-		messageElement.classList.toggle('text-cyan-300', success);
-		messageElement.classList.toggle('text-rose-300', !success);
+		messageElement.classList.toggle('form-message-success', success);
+		messageElement.classList.toggle('form-message-error', !success);
 	};
 
 	const values = () => inputs.map((input) => input.value.trim());
