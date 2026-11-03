@@ -1,4 +1,22 @@
 (() => {
+	const navToggle = document.querySelector('.nav-toggle');
+	const navigation = document.querySelector('#site-navigation');
+
+	if (navToggle && navigation) {
+		navToggle.addEventListener('click', () => {
+			const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+			navToggle.setAttribute('aria-expanded', String(!isExpanded));
+			navToggle.closest('header')?.classList.toggle('nav-open', !isExpanded);
+		});
+
+		navigation.addEventListener('click', (event) => {
+			if (event.target instanceof Element && event.target.closest('a')) {
+				navToggle.setAttribute('aria-expanded', 'false');
+				navToggle.closest('header')?.classList.remove('nav-open');
+			}
+		});
+	}
+
 	const main = document.querySelector('main');
 	if (!main) return;
 
