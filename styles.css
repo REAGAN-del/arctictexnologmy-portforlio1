@@ -191,6 +191,7 @@ main input {
   color: var(--text);
 }
 
+
 main input:focus {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -210,6 +211,8 @@ main button:hover {
   background: var(--accent-light);
   transform: translateY(-1px);
 }
+
+  
 
 .form-message {
   margin: 1rem 0 0;
@@ -255,12 +258,7 @@ footer h1 {
   font-size: 1rem;
 }
 
-footer p {
-  margin: 0;
-  color: var(--text-soft);
-  font-size: 10px;
-  line-height: 1.8;
-}
+
 
 footer a {
   margin: 0;
@@ -375,6 +373,13 @@ footer > section:last-child p {
   line-height: 1.9;
 }
 
+#headings , h1 {
+    font-size: 25px;
+    text-align: center;
+    color: #67e8f9;
+  
+}
+
 .home-page main > div:nth-of-type(2) > section:first-child {
   margin-top: 4rem;
   text-align: left;
@@ -468,6 +473,8 @@ footer > section:last-child p {
 .contact-page main > div {
   text-align: center;
 }
+
+
 
 .account-page main label,
 .contact-page main label {
