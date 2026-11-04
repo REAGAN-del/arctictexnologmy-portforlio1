@@ -710,3 +710,9 @@ footer > section:first-child {
     grid-template-columns: 1fr;
   }
 }
+
+#language-size {
+  font-size: 20px;
+  color: #155e75;
+  font: bold;
+}
