@@ -373,10 +373,10 @@ footer > section:last-child p {
 }
 
 .home-page main > div:first-of-type img {
-  width: 6rem;
-  height: 6rem;
+  width: cover;
+  height: cover;
   margin: 0 auto 1rem;
-  border-radius: 50%;
+  border-radius: 10%;
   object-fit: cover;
 }
 
@@ -760,4 +760,8 @@ footer > section:first-child {
   
   color:  #67e8f9;
   
+}
+
+#images {
+  width: fit-content;
 }
