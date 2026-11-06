@@ -4,66 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RegsTech</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About Amambua Reagan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="node.js" defer></script>
 
 </head>
 
-<body class="about-page">
-    <header>
-        <div class="site-brand">
+<body class="min-w-[320px] overflow-x-hidden bg-slate-950 font-sans leading-relaxed text-slate-50">
+    <header
+        class="sticky top-0 z-10 flex min-h-[4.5rem] items-center justify-between gap-4 border-b border-slate-700 bg-slate-950/95 px-4 py-3 backdrop-blur sm:px-8">
+        <div class="flex items-center gap-3 text-left">
             <div>
-                <img src="logo.jpeg" alt="regstec">
+                <img class="h-12 w-12 rounded-full object-cover sm:h-16 sm:w-16" src="logo.jpeg" alt="RegsTech logo">
             </div>
-            <div>
-                <h1>Regs<strong>Tech</strong></h1>
-                <p>Regulatory Tech<strong>nology Solutions</strong></p>
-            </div>
+           
         </div>
-        <nav id="site-navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact Me</a>
+        <nav id="site-navigation"
+            class="absolute left-0 right-0 top-full hidden grid grid-cols-1 border-b border-slate-700 bg-slate-950/95 px-4 pb-4 md:static md:flex md:flex-row md:justify-end md:gap-4 md:border-0 md:bg-transparent md:p-0">
+            <a class="py-2 text-slate-300 transition hover:text-cyan-300 md:px-2" href="index.html">Home</a>
+            <a class="py-2 text-slate-300 transition hover:text-cyan-300 md:px-2" href="about.html">About</a>
+            <a class="py-2 text-slate-300 transition hover:text-cyan-300 md:px-2" href="contact.html">Contact Me</a>
 
-            <a href="index.html#software">My Services</a>
+            <a class="py-2 text-slate-300 transition hover:text-cyan-300 md:px-2" href="index.html#software">My
+                Services</a>
         </nav>
-        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-navigation"
+        <button class="nav-toggle rounded-lg border border-slate-700 px-3 py-1 text-xl text-slate-50 md:hidden"
+            type="button" aria-label="Toggle navigation" aria-controls="site-navigation"
             aria-expanded="false">&#9776;</button>
     </header>
-    <div>
-        <section>
-            <h1>ABOUT ME</h1>
-            <p>This is a portfolio website written by AMAMBUA REAGAN<br>
-                for his project at ARTIC Technologies.<br>
-                This portfolio shows a lot about his career ambitions and various fields of focus.</p>
-            <a href="about.html"><button type="button">More</button></a>
+    <main class="mx-auto my-12 min-h-[45vh] w-[calc(100%-2rem)] max-w-5xl sm:w-[calc(100%-3rem)]">
+        <div class="flex flex-col gap-4">
+            <div class="rounded-2xl border border-slate-700 bg-slate-900 p-6 sm:p-12">
+                <h1 class="mb-5 text-3xl font-bold text-cyan-400 sm:text-4xl">ABOUT ME</h1>
+                <p class="mb-6 text-lg text-slate-300">This is a portfolio website written by AMAMBUA REAGAN<br>
+                    for his project at ARTIC Technologies.<br>
+                    This portfolio shows a lot about his career ambitions and various fields of focus.</p>
 
-        </section>
-    </div>
-    <footer>
-        <section>
 
-            <article>
-                <h1>Languages</h1>
-                <a href="#">html</a>
-                <a href="#">css</a>
-                <a href="#">javascript</a>
-                <a href="#">tailwind css</a>
-                <a href="#">react.js</a>
-                <a href="#">vue.js</a>
+
+            </div>
+            <div class="rounded-2xl border border-slate-700 bg-slate-900 p-6 sm:p-12">
+                <h1 class="mb-5 text-3xl font-bold text-cyan-400 sm:text-4xl">BACKGROUND</h1>
+
+                <p>My academic journey bean from when i had my ordinary level cetificate wich made me realised i had a
+                    passion for technology and innovation.
+                    i later went on to pursue a degree in computer engineering at the university of buea, where i honed
+                    my
+                    skills in programming, software development, and problem-solving.
+                </p>
+
+
+            </div>
+            <div class="rounded-2xl border border-slate-700 bg-slate-900 p-6 sm:p-12">
+                <h1 class="mb-5 text-3xl font-bold text-cyan-400 sm:text-4xl">EDUCATION</h1>
+                <p> I pursued a degree in computer engineering at the university of buea, where i honed my skills in
+                    programming, software development, and problem-solving.
+                </p>
+            </div>
+            <div class="rounded-2xl border border-slate-700 bg-slate-900 p-6 sm:p-12">
+                <h1 class="mb-5 text-3xl font-bold text-cyan-400 sm:text-4xl">CV</h1>
+                <p> You can download my CV by clicking the link below:
+                </p>
+                <img src="cv.png" alt="CV">
+                <a href="cv.png" download class="mt-4 inline-block text-cyan-400 hover:text-cyan-300">Download CV</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-8 border-t border-slate-700 bg-zinc-900/95 px-4 pb-8 pt-6">
+        <section class="mx-auto grid max-w-6xl  gap-8">
+            <article class="min-w-0 text-xs">
+                <h2 class="mb-2 text-left text-base font-bold text-cyan-400">Languages</h2>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="#skills">HTML</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="#skills">CSS</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="#skills">JavaScript</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="#skills">Tailwind CSS</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="#skills">React.js</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="#skills">Vue.js</a>
             </article>
-            <article>
-                <h1>Contact</h1>
-                <a href="mailto:amambuareagan863@gmail.com">Email: amambuareagan863@gmail.com</a>
-                <a href="tel:+237670205933">Phone: +237 670205933</a>
-                <a href="https://wa.me/237670205933">WhatsApp: +237 670205933</a>
-                <a>Address: Buea, Cameroon</a>
-
+            <article class="min-w-0 text-xs">
+                <h2 class="mb-2 text-left text-base font-bold text-cyan-400">Contact</h2>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="mailto:amambuareagan863@gmail.com">Email: amambuareagan863@gmail.com</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="tel:+237670205933">Phone: +237 670205933</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="https://wa.me/237670205933">WhatsApp: +237 670205933</a>
+                <p class="text-sm leading-7 text-slate-300">Address: Buea, Cameroon</p>
             </article>
         </section>
-        <section>
-            <p>All rights reserved &copy; 2026 RegsTech.</p>
+        <section class="mx-auto mt-6 max-w-6xl border-t border-slate-700 pt-4 text-center">
+            <p class="break-words text-slate-300">All rights reserved &copy; 2026.</p>
         </section>
     </footer>
 </body>

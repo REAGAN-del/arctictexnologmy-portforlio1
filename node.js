@@ -6,13 +6,13 @@
 		navToggle.addEventListener('click', () => {
 			const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
 			navToggle.setAttribute('aria-expanded', String(!isExpanded));
-			navToggle.closest('header')?.classList.toggle('nav-open', !isExpanded);
+			navigation.classList.toggle('hidden', isExpanded);
 		});
 
 		navigation.addEventListener('click', (event) => {
 			if (event.target instanceof Element && event.target.closest('a')) {
 				navToggle.setAttribute('aria-expanded', 'false');
-				navToggle.closest('header')?.classList.remove('nav-open');
+				navigation.classList.add('hidden');
 			}
 		});
 	}
@@ -29,12 +29,12 @@
 		if (!messageElement) {
 			messageElement = document.createElement('p');
 			messageElement.dataset.formMessage = 'true';
-			messageElement.className = 'form-message';
+			messageElement.className = 'mt-4 text-center font-bold';
 			button.insertAdjacentElement('afterend', messageElement);
 		}
 		messageElement.textContent = message;
-		messageElement.classList.toggle('form-message-success', success);
-		messageElement.classList.toggle('form-message-error', !success);
+		messageElement.classList.toggle('text-cyan-300', success);
+		messageElement.classList.toggle('text-rose-300', !success);
 	};
 
 	const values = () => inputs.map((input) => input.value.trim());
@@ -87,8 +87,8 @@
 			return;
 		}
 
-		const [phone, email, message] = values();
-		if (!phone || !email || !message) {
+		const [name, phone, email, message] = values();
+		if (!name || !phone || !email || !message) {
 			showMessage('Please complete every field.');
 			return;
 		}

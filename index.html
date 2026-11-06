@@ -4,180 +4,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RegsTech</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Amambua Reagan | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="node.js" defer></script>
 </head>
 
-<body class="home-page">
+<body class="min-w-[320px] overflow-x-hidden bg-slate-950 font-sans leading-relaxed text-slate-50">
 
-    <header>
-        <div class="site-brand">
+    <header
+        class="sticky top-0 z-10 flex min-h-[4.5rem] items-center justify-between gap-4 border-b border-slate-700 bg-slate-950/95 px-4 py-3 backdrop-blur sm:px-8">
+        <div class="flex items-center gap-3 text-left">
             <div>
-                <img src="logo.jpeg" alt="regstec">
+                <img class="h-12 w-12 rounded-full object-cover sm:h-16 sm:w-16" src="logo.jpeg" alt="RegsTech logo">
             </div>
-            <div>
-                <h1>Regs<strong>Tech</strong></h1>
-                <p>Regulatory Tech<strong>nology Solutions</strong></p>
-            </div>
+
         </div>
 
-        <nav id="site-navigation">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact Me</a>
+        <nav id="site-navigation"
+            class="absolute left-0 right-0 top-full hidden grid grid-cols-1 border-b border-slate-700 bg-slate-950/95 px-4 pb-4 md:static md:flex md:flex-row md:justify-end md:gap-4 md:border-0 md:bg-transparent md:p-0">
+            <a class="py-2 text-slate-300 transition hover:text-cyan-300 md:px-2" href="index.html">Home</a>
+            <a class="py-2 text-slate-300 transition hover:text-cyan-300 md:px-2" href="about.html">About</a>
+            <a class="py-2 text-slate-300 transition hover:text-cyan-300 md:px-2" href="contact.html">Contact Me</a>
 
-           <a href="index.html#software">My Services</a>
+            <a class="py-2 text-slate-300 transition hover:text-cyan-300 md:px-2" href="index.html#software">My
+                Services</a>
         </nav>
-        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-navigation"
+        <button class="nav-toggle rounded-lg border border-slate-700 px-3 py-1 text-xl text-slate-50 md:hidden"
+            type="button" aria-label="Toggle navigation" aria-controls="site-navigation"
             aria-expanded="false">&#9776;</button>
     </header>
-    <main>
-        <section>
-            <h2>HI I AM AMAMBUA REAGAN </h2>
-            <p>I am a passionate <span id="skill"><b>FRONTEND DEVELOPER, <br> </b></span> Who enjoys building responsive and user-freindly websites. </p>
-
+    <main class="mx-auto my-8 w-[calc(100%-2rem)] max-w-6xl sm:w-[calc(100%-3rem)]">
+        <section
+            class="mx-auto mb-8 mt-12 flex min-h-36 w-full max-w-5xl flex-col items-center justify-center rounded-[2rem] border-b-2 border-slate-700 bg-slate-900 px-4 py-8 text-center shadow-[0_0_20px_rgba(8,145,178,0.25)]">
+            <h2 class="mb-4 text-3xl font-bold text-cyan-300 sm:text-4xl">HI, I'M AMAMBUA REAGAN</h2>
+            <p class="text-slate-300">I am a passionate <span id="skill"><b class="text-cyan-400">FRONTEND
+                        DEVELOPER</b></span> who enjoys creating clean, responsive, and user-friendly digital
+                experiences.</p>
         </section>
-        <div>
-            <section>
-                <img src="Screenshot_20261105-094149_1.png" id="images" alt="">
+        <div class="mt-8 grid gap-8 md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
+            <section class="min-w-0 rounded-3xl bg-slate-900 p-6 shadow-[0_0_20px_rgba(8,145,178,0.2)]">
+                <img class="mx-auto mb-4 max-h-[32rem] w-full rounded-2xl object-cover" src="me.png" id="images"
+                    alt="Amambua Reagan portrait">
             </section>
-            <section>
-               
-            
-                <p>This website was built by AMAMBUA REAGAN.<br> This website will show how
-                    interfaces are, built by AMAMBUA REAGAN.<br> know alot about the developer. Go through this site and be
-                    amased.
-                </p>
+            <section class="min-w-0 rounded-3xl bg-slate-900 p-6 shadow-[0_0_20px_rgba(8,145,178,0.2)]">
+                <p class="text-center text-lg leading-8 text-slate-300">I design and build websites that are modern,
+                    functional, and focused on user experience.<br>
+                    This portfolio reflects my journey, my skills, and my growing passion for web development.<br>
+                    Explore my work and get to know more about what I do.</p>
             </section>
 
-            <section>
-                <div >
+            <section id="skills" class="min-w-0 rounded-3xl bg-slate-900 p-6 shadow-[0_0_20px_rgba(8,145,178,0.2)]">
+                <div class="text-center">
+                    <p id="language-siz" class="mb-4 text-xl font-bold text-cyan-400"><b>LANGUAGES I USE</b></p>
 
-                    <p id="language-size"><b>LANGUAGES LEARNT</b></p>
 
-                    <a href="#">
-                        <p>html</p>
-                    </a>
-                    <a href="#">
-                        <p>css</p>
-                    </a>
-                    <a href="#">
-                        <p>javascript</p>
-                    </a>
-                    <a href="#">
-                        <p>tailwind css</p>
-                    </a>
-                    <a href="#">
-                        <p>react.js</p>
-                    </a>
-                    <a href="#">
-                        <p>vue.js</p>
+                    <a class="block rounded-lg flex justify-between px-3 py-2 text-slate-300 transition hover:bg-slate-800 hover:text-cyan-300"
+                        href="#skills">
+                        <p>HTML</p>
+                        <span class="text-cyan-400">90%</span>
                     </a>
 
+                    <a class="block rounded-lg flex justify-between px-3 py-2 text-slate-300 transition hover:bg-slate-800 hover:text-cyan-300"
+                        href="#skills">
+                        <p>CSS</p>
+                        <span class="text-cyan-400">95%</span>
+                    </a>
+                    <a class="block rounded-lg flex justify-between px-3 py-2 text-slate-300 transition hover:bg-slate-800 hover:text-cyan-300"
+                        href="#skills">
+                        <p>JavaScript</p>
+                        <span class="text-cyan-400">80%</span>
+                    </a>
+                    <a class="block rounded-lg flex justify-between px-3 py-2 text-slate-300 transition hover:bg-slate-800 hover:text-cyan-300"
+                        href="#skills">
+                        <p>Tailwind CSS</p>
+                        <span class="text-cyan-400">90%</span>
+                    </a>
+                    <a class="block rounded-lg flex justify-between px-3 py-2 text-slate-300 transition hover:bg-slate-800 hover:text-cyan-300"
+                        href="#skills">
+                        <p>React.js</p>
+                        <span class="text-cyan-400">60%</span>
+                    </a>
+                    <a class="block rounded-lg flex justify-between px-3 py-2 text-slate-300 transition hover:bg-slate-800 hover:text-cyan-300"
+                        href="#skills">
+                        <p>Vue.js</p>
+                        <span class="text-cyan-400">50%</span>
+                    </a>
                 </div>
             </section>
-
-
         </div>
 
-        <div>
-            <section>
+        <div class="mt-12">
+            <section class="mb-6">
                 <article>
                     <div>
-                        <p>Tracks on <strong>Fields</strong></p>
-                        <p>This are the tracks on the various fields, i'm working on.</p>
+                        <p id="language-size" class="text-3xl font-bold text-cyan-400">My <strong>Focus Areas</strong>
+                        </p>
+                        <p class="text-slate-300">These are the areas where I am developing my skills and continuing to improve.</p>
                     </div>
                 </article>
             </section>
-            <section id="headings">
-                <article>
-                    <p>3</p>
-                    <h1 class="hhhh">Web Development</h1>
-                    <p id="parag">Currently building websites for companies and mobile friendly and responsive design for
-                        buisiness, schools and creators.
-                    </p>
+            <section id="headings" class="grid gap-6 md:grid-cols-3">
+                <article class="min-w-0 rounded-3xl border-4 border-dashed border-slate-700 bg-slate-900 p-6">
+                    <p class="text-4xl font-bold text-cyan-300">3</p>
+                    <h1 class="mb-3 text-2xl font-bold text-cyan-300">Web Development</h1>
+                    <p id="parag" class="text-slate-300">I build responsive websites for businesses, schools, and
+                        creators with a strong focus on clean design and usability.</p>
                 </article>
-                <article>
-                    <p>0</p>
-                    <h1>Game Development</h1>
-                    <p id="parag">Aspiring to design  mobile games from idea to playstore. My focus is simple games that are easy
-                        to learn and hard to putdown. </p>
+                <article class="min-w-0 rounded-3xl border-4 border-dashed border-slate-700 bg-slate-900 p-6">
+                    <p class="text-4xl font-bold text-cyan-300">0</p>
+                    <h1 class="mb-3 text-2xl font-bold text-cyan-300">Game Development</h1>
+                    <p id="parag" class="text-slate-300">I am learning how to create simple, engaging mobile games with
+                        smooth gameplay and memorable experiences.</p>
                 </article>
-                <article>
-                    <p>0</p>
-                    <h1>security system</h1>
-                    <p id="parag">Aspiring to follow a career part also in cyber security, in orther to perform ethical hacking and
-                        penetration testing securing network and web apps.</p>
+                <article class="min-w-0 rounded-3xl border-4 border-dashed border-slate-700 bg-slate-900 p-6">
+                    <p class="text-4xl font-bold text-cyan-300">0</p>
+                    <h1 class="mb-3 text-2xl font-bold text-cyan-300">Cybersecurity</h1>
+                    <p id="parag" class="text-slate-300">I am also interested in cybersecurity, ethical hacking, and
+                        penetration testing to secure networks and web applications.</p>
                 </article>
             </section>
         </div>
-        <div>
+        <div class="mt-12 space-y-8">
             <section>
-                <h1 id="software">OUR SERVICES</h1>
-                <p>soware development is a great field and a broad field too <br> buiding systems that solves human
-                    problems is our main goal </p>
+                <h1 id="software" class="mb-3 text-3xl font-bold text-cyan-400 sm:text-4xl">MY SERVICES</h1>
+                <p class="text-slate-300">I create digital solutions that help people and businesses present themselves
+                    better online.</p>
             </section>
-            <section>
-                <article>
-                    <h1>Web Development</h1>
-                    <p>Building websites that helps companies and individuals and buisnesses, <br> track thier buisness and
-                        companies activity. With Regstech  companies <br> will have good websites for a client to
-                        navaigate and know alot about <br> the company or buisness</p>
-                    <a href="about.html"><button type="button">More</button></a>
+            <section class="grid gap-6 md:grid-cols-3">
+                <article class="rounded-2xl border border-slate-700 bg-slate-900 p-6">
+                    <h2 class="mb-3 text-2xl font-bold text-cyan-300">Web Development</h2>
+                    <p class="mb-5 text-slate-300">I design and build websites that help businesses communicate clearly,
+                        attract clients, and grow online.</p>
+                    <a class="inline-flex rounded-xl bg-cyan-400 px-4 py-2 font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300"
+                        href="about.html">Hire</a>
                 </article>
-                <article>
-                    <h1>Game Development</h1>
-                    <p>game development is a good and an entertainment skill. Developing games <br> to meet user
-                        satisfaction is my goal the games we develop has good graphics <br> accessable by any operating
-                        system</p>
-                    <a href="about.html"><button type="button">More</button></a>
+                <article class="rounded-2xl border border-slate-700 bg-slate-900 p-6">
+                    <h2 class="mb-3 text-2xl font-bold text-cyan-300">UI/UX Design</h2>
+                    <p class="mb-5 text-slate-300">I focus on interfaces that are intuitive, attractive, and easy for
+                        users to navigate.</p>
+                    <a class="inline-flex rounded-xl bg-cyan-400 px-4 py-2 font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300"
+                        href="about.html">Hire</a>
                 </article>
 
-                <article>
-                    <h1>Security System</h1>
-                    <p>Aspiring to follow a career part also in cyber security, in orther to perform ethical hacking and
-                        penetration testing securing network and web apps.</p>
-                    <a href="about.html"><button type="button">More</button></a>
+                <article class="rounded-2xl border border-slate-700 bg-slate-900 p-6">
+                    <h2 class="mb-3 text-2xl font-bold text-cyan-300">Security &amp; Learning</h2>
+                    <p class="mb-5 text-slate-300">I enjoy learning about secure systems, ethical hacking, and
+                        protecting digital platforms from threats.</p>
+                    <a class="inline-flex rounded-xl bg-cyan-400 px-4 py-2 font-bold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300"
+                        href="about.html">Hire</a>
                 </article>
             </section>
-            <section>
-                <h1 id="software">CONTACT ME</h1>
-                <p>Contact Me on the following platforms </p>
-                <a href="contact.html"><button type="button">contact</button></a>
+            <section class="rounded-2xl bg-slate-900 p-6">
+                <h2 class="mb-3 text-3xl font-bold text-cyan-400">CONTACT ME</h2>
+                <p class="mb-5 text-slate-300">Let’s connect and talk about projects, ideas, or collaborations.</p>
+                <a class="inline-flex rounded-xl bg-cyan-400 px-4 py-2 font-bold text-slate-950 transition hover:bg-cyan-300"
+                    href="contact.html">Contact</a>
             </section>
-            <section>
-                <h1 id="software">ABOUT ME</h1>
-                <p>This is a portfolio website written by AMAMBUA REAGAN <br> for his project at ARTIC Technologies
-                    <br> this portfolio shows alot about his career ambitions and various fields of focus
-                </p>
-                <a href="about.html"><button type="button">more</button></a>
+            <section class="rounded-2xl bg-slate-900 p-6">
+                <h2 class="mb-3 text-3xl font-bold text-cyan-400">ABOUT ME</h2>
+                <p class="mb-5 text-slate-300">I am a passionate developer skilled in creating innovative solutions and
+                    building websites to
+                    showcase my skills, creativity, and future ambitions in technology.</p>
+                <a class="inline-flex rounded-xl bg-cyan-400 px-4 py-2 font-bold text-slate-950 transition hover:bg-cyan-300"
+                    href="about.html">More</a>
             </section>
+        </div>
+        <div class="mt-12 space-y-8">
+            <section>
+                <h2 id="projects" class="mb-3 text-3xl font-bold text-cyan-400 sm:text-4xl">Future Projects</h2>
+                <p class="text-slate-300">My goal is to build the following projects in the future.</p>
+            </section>
+            <section class="grid gap-6 md:grid-cols-3">
+                <article class="rounded-2xl border border-slate-700 bg-slate-900 p-6">
+                    <h2 class="mb-3 text-2xl font-bold text-cyan-300">Web Development</h2>
+                    <p class="mb-5 text-slate-300">My aim is to create responsive, user-friendly websites that deliver
+                        exceptional experiences for companies, restaurants, and more.</p>
+                    <h1 class="mb-3 text-xl font-bold text-cyan-300">Company website</h1>
+                    <img src="krakenimages-376KN_ISplE-unsplash.jpg" class="mb-2" alt="">
+                    <h1 class="mb-3 text-xl font-bold text-cyan-300">Restaurant website</h1>
+                    <img src="caique-morais-356cJWmD7JI-unsplash.jpg" class="mb-2" alt="">
 
+                    <a class="inline-flex rounded-xl bg-cyan-400 px-4 py-2 font-bold text-slate-950 transition hover:bg-cyan-300"
+                        href="about.html">More</a>
+                </article>
+              
+
+                <article class="rounded-2xl border border-slate-700 bg-slate-900 p-6">
+                    <h2 class="mb-3 text-2xl font-bold text-cyan-300">Security &amp; Learning</h2>
+                    <p class="mb-5 text-slate-300">I enjoy learning about secure systems, ethical hacking, and
+                        protecting digital platforms from threats.</p>
+                        <h1 class="mb-3 text-xl font-bold text-cyan-300">Face Recognition Systems</h1>
+                        <img src="face.png" class="mb-2" alt="">
+                    <a class="inline-flex rounded-xl bg-cyan-400 px-4 py-2 font-bold text-slate-950 transition hover:bg-cyan-300"
+                        href="about.html">More</a>
+                </article>
+            </section>
+            <section class="rounded-2xl bg-slate-900 p-6">
+                <h2 class="mb-3 text-3xl font-bold text-cyan-400">CONTACT ME</h2>
+                <p class="mb-5 text-slate-300">Let’s connect and talk about projects, ideas, or collaborations.</p>
+                <a class="inline-flex rounded-xl bg-cyan-400 px-4 py-2 font-bold text-slate-950 transition hover:bg-cyan-300"
+                    href="contact.html">Contact</a>
+            </section>
+            <section class="rounded-2xl bg-slate-900 p-6">
+                <h2 class="mb-3 text-3xl font-bold text-cyan-400">ABOUT ME</h2>
+                <p class="mb-5 text-slate-300">I am Amambua Reagan, a passionate developer building a portfolio to
+                    showcase my skills, creativity, and future ambitions in technology.</p>
+                <a class="inline-flex rounded-xl bg-cyan-400 px-4 py-2 font-bold text-slate-950 transition hover:bg-cyan-300"
+                    href="about.html">More</a>
+            </section>
         </div>
     </main>
-    <footer>
-        <section>
-            <article>
-                <h1>Languages</h1>
-                <a href="#">html</a>
-                <a href="#">css</a>
-                <a href="#">javascript</a>
-                <a href="#">tailwind css</a>
-                <a href="#">react.js</a>
-                <a href="#">vue.js</a>
+    <footer class="mt-8 border-t border-slate-700 bg-zinc-900/95 px-4 pb-8 pt-6">
+        <section class="mx-auto grid max-w-6xl  gap-8">
+            <article class="min-w-0 text-[4px]">
+                <h2 class="mb-2 text-left text-base font-bold text-cyan-400">Languages</h2>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="#skills">HTML</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="#skills">CSS</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="#skills">JavaScript</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="#skills">Tailwind CSS</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="#skills">React.js</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="#skills">Vue.js</a>
             </article>
-            <article>
-                <h1>Contact</h1>
-                <a href="mailto:amambuareagan863@gmail.com">Email: amambuareagan863@gmail.com</a>
-                <a href="tel:+237670205933">Phone: +237 670205933</a>
-                <a href="https://wa.me/237670205933">whatsapp: +237 670205933</a>
-                <a>Address: Buea, Cameroon</a>
-
+            <article class="min-w-0 text-[2px]">
+                <h2 class="mb-2 text-left text-base font-bold text-cyan-400">Contact</h2>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="mailto:amambuareagan863@gmail.com">Email: amambuareagan863@gmail.com</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="tel:+237670205933">Phone: +237 670205933</a>
+                <a class="block break-words text-sm leading-7 text-slate-300 transition hover:text-cyan-300"
+                    href="https://wa.me/237670205933">WhatsApp: +237 670205933</a>
+                <p class="text-sm leading-7 text-slate-300">Address: Buea, Cameroon</p>
             </article>
         </section>
-        <section>
-            <p>all rights reserved &copy; 2026 </p>
+        <section class="mx-auto mt-6 max-w-6xl border-t border-slate-700 pt-4 text-center">
+            <p class="break-words text-slate-300">All rights reserved &copy; 2026.</p>
         </section>
     </footer>
 </body>
