@@ -96,7 +96,7 @@
 			showMessage('Please enter a valid email address.');
 			return;
 		}
-		showMessage('Thank you. Your message is ready to send.', true);
+		showMessage('Message Sent, Will Get Back To You In 24HRS', true);
 		inputs.forEach((input) => { input.value = ''; });
 	});
 })();
